@@ -15,7 +15,7 @@ body {
     background-color: skyblue; /* #1 */
     opacity: 1.0; /* #2 */
     color: red; /* #3 */
-    text-align: center !important; /* #4 */
+    text-align: center; /* #4 */
     font-size: 40px; /* #5 */
     
     animation-name: animation; /* #31 */
@@ -26,7 +26,7 @@ body {
 
     margin: auto;
     height: 50px; /* #36 */
-    width: 400px; /* #37 */
+    width: fit-content; /* #37 */
 
     border-color: black; /* #10 */
     border-width: 5px; /* #11 */
@@ -44,9 +44,10 @@ img.me {
     margin-right: auto; /* #40 */
 }
 
-div.boxed {
+div.intro {
     background-color: orange;
-    box-shadow: 5px 5px lightblue /* #18 */
+    box-shadow: 5px 5px lightblue; /* #18 */
+    width: fit-content;
 }
 
 table, th, td {
