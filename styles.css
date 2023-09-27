@@ -20,7 +20,7 @@ body {
     
     animation-name: animation; /* #31 */
     animation-duration: 2s; /* #32 */
-    animation-delay: none; /* #33 */
+    animation-delay: 0s; /* #33 */
     animation-fill-mode: both; /* #34 */
     animation-iteration-count: infinite; /* #35 */
 
