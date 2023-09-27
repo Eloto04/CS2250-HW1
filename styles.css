@@ -20,7 +20,7 @@ body {
     
     animation-name: animation; /* #31 */
     animation-duration: 2s; /* #32 */
-    animation-delay: 0; /* #33 */
+    animation-delay: none; /* #33 */
     animation-fill-mode: both; /* #34 */
     animation-iteration-count: infinite; /* #35 */
 
@@ -35,7 +35,6 @@ body {
     border-bottom-style: double; /* #14 */
     border-left-style: solid; /* #15 */
     border-radius: 8px; /* #16 */
-    border-left: 50%;
 }
 
 img.me {
