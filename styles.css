@@ -5,6 +5,12 @@ body {
     background-attachment: fixed; /* #9 */
 }
 
+@keyframes animation {
+    0% {background-color: skyblue}
+    50% {background-color: yellow}
+    100% {background-color: skyblue}
+}
+
 #welcome {
     background-color: skyblue; /* #1 */
     opacity: 1.0; /* #2 */
@@ -12,8 +18,15 @@ body {
     text-align: center !important; /* #4 */
     font-size: 40px; /* #5 */
     
-    height: 50px;
-    width: 400px;
+    animation-name: animation; /* #31 */
+    animation-duration: 2s; /* #32 */
+    animation-delay: 0; /* #33 */
+    animation-fill-mode: both; /* #34 */
+    animation-iteration-count: infinite; /* #35 */
+
+    margin: auto;
+    height: 50px; /* #36 */
+    width: 400px; /* #37 */
 
     border-color: black; /* #10 */
     border-width: 5px; /* #11 */
@@ -22,6 +35,14 @@ body {
     border-bottom-style: double; /* #14 */
     border-left-style: solid; /* #15 */
     border-radius: 8px; /* #16 */
+    border-left: 50%;
+}
+
+img.me {
+    display: block;
+    margin-top: 20px; /* #38 */
+    margin-left: auto; /* #39 */
+    margin-right: auto; /* #40 */
 }
 
 div.boxed {
@@ -31,4 +52,28 @@ div.boxed {
 
 table, th, td {
     border: 1px solid /* #17 */
+}
+
+ul.menu {
+    list-style-type: none; /* #19 */
+    margin: 0; /* #20 */
+    padding: 0; /* #21 */
+    overflow: hidden; /* #22 */
+    position: fixed; /* #23 */
+    top: 0; /* #24 */
+    width: 100%;
+}
+
+li.menu {
+    font-family: "Verdana", "Arial", sans-serif; /* #28 */
+    display: inline; /* #25 */
+    float: right; /* #26 */
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none; /* #27 */
+}
+
+li.hobbies {
+    list-style-image: url('smiley.jpg'); /* #29 */
+    list-style-position: outside; /* #30 */
 }
